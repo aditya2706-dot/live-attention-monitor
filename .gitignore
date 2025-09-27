@@ -1,0 +1,16 @@
+# Python artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+env/
+
+# User-specific data and models
+dataset/
+
+# IDE and editor directories
+.vscode/
+.idea/

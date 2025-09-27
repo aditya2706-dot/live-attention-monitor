@@ -162,7 +162,7 @@ while st.session_state.run and st.session_state.capture:
             ax1.pie(status_counts, labels=status_counts.index, autopct='%1.1f%%', startangle=90, colors=chart_colors)
             ax1.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
             pie_chart_placeholder.pyplot(fig1)
-            plt.close(fig1) # Close the figure to free memory
+            plt.close(fig1) # Explicitly close the figure to free memory
 
             # --- Summary Table ---
             total_frames = len(log_df)
@@ -188,7 +188,7 @@ while st.session_state.run and st.session_state.capture:
             plt.grid(True)
             fig2.tight_layout()
             time_series_placeholder.pyplot(fig2)
-            plt.close(fig2) # Close the figure to free memory
+            plt.close(fig2) # Explicitly close the figure to free memory
 
 # --- After the loop finishes ---
 if not st.session_state.run:
